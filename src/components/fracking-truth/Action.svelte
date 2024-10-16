@@ -17,7 +17,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <h2>Tell gas companies to stop greenwashing their toxic products!</h2>
-                <iframe src="https://act.stand.earth/page/74529/petition/1" style="width:100%;height:500px;" title="Sign the petition"></iframe>
+                <iframe src="https://act.stand.earth/page/74529/petition/1" style="width:100%;height:600px;" title="Sign the petition"></iframe>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <script>
-	export let title = "Prime Polluter: Amazon's Growing Emissions Problem";
-	export let description = "Five years on, Amazon’s Climate Pledge leaves a legacy of weak and broken promises in U.S. shipping and deliveries";
-	export let url = "https://publications.stand.earth/prime-polluter";
+	export let title = "The Fracking Truth - Monster Misconceptions of Unnatural Gas";
+	export let description = "Fracked gas is fuel on the fire of climate change";
+	export let url = "https://standearth.github.io/fracking-truth";
 	export let keywords = "";
 	export let preloadFont = [];
 </script>
@@ -19,7 +19,7 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_US" />
 
-	<meta property="og:image" content="{url}/assets/prime/prime_og.jpg" />
+	<meta property="og:image" content="{url}/assets/fracking/illustration-goon-squad.webp" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="628" />
@@ -29,7 +29,7 @@
 	<meta name="twitter:creator" content="@standearth" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image:src" content="{url}/assets/prime/prime_og.png" />
+	<meta name="twitter:image:src" content="{url}/assets/fracking/illustration-goon-squad.webp" />
 
 	<meta name="robots" content="max-image-preview:large" />
 
