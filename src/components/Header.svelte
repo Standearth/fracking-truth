@@ -1,30 +1,39 @@
 <script>
 	// shadow, plain, line, bubble
-	import wordmark from "$svg/stand_logo.svg";
-	import Hero from "$components/prime/Hero.svelte";
-	import { Download, Megaphone } from "lucide-svelte";
+	import wordmark_stand from "$svg/stand_logo_black.svg";
+	import { getContext } from "svelte";
+	const copy = getContext("copy");
 </script>
 <header>
 	<div class="container-xxl">
 		<div class="top-header row">
-			<div class="wordmark col-6">
-				<a href="https://stand.earth" aria-label="Stand.earth" target="_self">{@html wordmark}</a>
+			<div class="wordmark col-4 col-sm-2">
+				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
 			</div>
-			<div class="nav col-6">
-				<a href="https://stand.earth/wp-content/uploads/2024/09/PRIME_POLLUTER-09.2024.pdf" target="_new"><Download size=20/>  Download PDF</a> <span>|</span> <a href="https://act.stand.earth/page/51302/petition/1?ea.tracking.id=homepage" target="_new"><Megaphone size=20/> Take Action</a>
+			<div class="logo col-4 col-sm-8">
+				<a href="https://thefrackingtruth.ca" aria-label="The Fracking Truth" target="_self"><img src="assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
+			</div>
+			<div class="wordmark-right col-4 col-sm-2">
+				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="assets/dogwood.png" alt="Dogwood BC"></a>
+			</div>
+		</div>
+		<div class="hero row">
+			<div class="copy col-lg-7 col-md-8 col-sm-12">
+				<h1>The Monster Misconceptions of <span>UN</span>Natural Gas</h1>
+				<h3>Fracked gas is fuel on the <br/>fire of climate change. </h3>
+				<img src="assets/fracking/arrow_down.png" alt="learn more">
+			</div>
+			<div class="goons col-lg-5 col-md-4 col-sm-12">
+				<img src="assets/fracking/illustration-goon-squad.webp" alt="Monster Misconceptions">
 			</div>
 		</div>
 	</div>
-	<Hero />
 </header>
 
 <style>
 	header {
-		height:100vh;
-		background-image:url('/assets/prime/primepolluter.jpg');
-		background-size:cover;
-		background-position:center;
-		background-attachment:fixed;
+		height:90vh;
+		background:#fdbfb1;
 	}
 
 	.top-header {
@@ -36,10 +45,31 @@
 	}
 	
 	.wordmark {
-		width: 9em;
+		width: 12em;
 		display:inline;
 		padding:15px;
 		float:left;
+	}
+
+	.wordmark img {
+		max-width:8em;
+	}
+
+	.logo {
+		width:9em;
+		padding-top:20px;
+	}
+
+	.wordmark-right {
+		width: 12em;
+		display:inline;
+		padding:15px;
+		float:right;
+		overflow:visible;
+	}
+
+	.wordmark-right img {
+		width:14rem;
 	}
 
 	.wordmark a {
@@ -51,36 +81,92 @@
 		background-color: transparent;
 	}
 
-	.nav {
-		padding:10px;
-		float:right;
-		justify-content:right;
-		font-size:16px;
-		color:#fff;
-		font-weight:bold;
-	}
-	.nav a {
-		color:#fff;
-		text-decoration:none;
-		padding:10px;
-	}
-	.nav span {
-		padding:10px;
+	.hero h1 {
+		padding-top:20%;
+		font-family:"BN";
+		font-size:4.8rem;
+		color:#471c15;
 	}
 
-	@media (max-width:769px) {
-		header {
-			background-position:left;
+	.hero h3 {
+		font-family:"Inter";
+		font-weight:300;
+		font-size:2rem;
+	}
+
+	.hero h1 span {
+		color:#ff7c61;
+	}
+
+	.copy {
+		z-index:15;
+	}
+
+	.copy img {
+		max-height:40px;
+	}
+
+	.goons {
+		position:relative;
+	}
+
+	.goons img {
+		min-width:140%;
+		position:absolute;
+		bottom:5%;
+		left:-40%;
+		z-index:10;
+	}	
+
+	@media (max-width:1200px) {
+		.hero h1 {
+			font-size:3rem;
+			padding-top:40%;
 		}
 
-		.nav span {
-			display:none;
+	}
+
+	@media (max-width:992px) {
+		.hero h1 {
+			font-size:3rem;
+			padding-top:40%;
 		}
 
-		.nav a {
-			display:block;
-			color: #333333;
+		.goons img {
+		width:100%;
+		z-index:10;
+	}
+
+	}
+
+	@media (max-width:768px) {
+		.hero h1 {
+			font-size:2rem;
+			padding-top:20%;
 		}
+
+		.goons img {
+		min-width:80%;
+		width:100%;
+		margin:auto;
+		z-index:10;
+		position:initial;
+		left:0px;
+		
+	}
+
+	.wordmark, .wordmark-right, .logo {
+		width:5em;
+	}
+
+	.wordmark img {
+		width:3em;
+	}
+
+	header {
+		height:auto;
+	}
+
 
 	}
 </style>

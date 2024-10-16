@@ -33,3 +33,13 @@
 	font-stretch: normal;
 	font-display: swap;
 }
+
+@font-face {
+	font-family: "Inter";
+	src: url("assets/Inter.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "BN";
+	src: url("assets/BN.otf") format("opentype");
+}

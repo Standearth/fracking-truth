@@ -9,9 +9,11 @@
     <div class="carous">
         <Splide aria-label="What Amazon Sold">
         {#each copy.cards as card}
+        <div class="col-3">
             <SplideSlide>
                 <Card {...card}/>
             </SplideSlide>
+        </div>
         {/each}   
         </Splide>
     </div>

@@ -1,0 +1,43 @@
+<script>
+    import { getContext } from "svelte";
+    const copy = getContext("copy");
+</script>
+<img src="assets/fracking/flames.png">
+<div class="action">
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <p>We know fracked gas is a fossil fuel like oil and coal which pollute communities and warm the planet. </p>
+                <p>And we know there are cleaner, safer, and more affordable ways to heat our homes — like using an electric heat pump. </p>
+            </div>
+        </div>
+        <div class="row form">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <img src="assets/fracking/letter.png" alt="Your letter to gas companies">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Tell gas companies to stop greenwashing their toxic products!</h2>
+                <iframe src="https://act.stand.earth/page/74529/petition/1" style="width:100%;height:500px;" title="Sign the petition"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .action {
+        background:#dea4ff;
+        text-align:center;
+    }
+
+    .form {
+        padding-top:20px;
+    }
+
+    .action p {
+        font-size:1.5rem;
+        font-weight:300;
+    }
+
+    .action h2 {
+        font-family:"BN";
+    }
+</style>

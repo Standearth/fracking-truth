@@ -1,43 +1,15 @@
 <script>
-	import wordmark from "$svg/stand_logo.svg";
-	import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon } from "lucide-svelte";
-	import { Download, Megaphone, FileText } from "lucide-svelte";
+	import wordmark_stand from "$svg/stand_logo_white.svg";
   
-	const links = [
-	  { name: "facebook", url: "https://facebook.com/standearth/" },
-	  {
-		name: "instagram",
-		url: "https://www.instagram.com/stand.earth",
-	  }, 
-	  { name: "linkedin", url: "https://www.linkedin.com/company/stand.earth" },
-	  { name: "twitter", url: "https://twitter.com/standearth/" }
-	];
-  
+	
   
   </script>
-  <div class="logos">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 mx-auto col-sm-12">
-				<h3>Produced in collaboration with:</h3>
-				<a href="https://www.pacificenvironment.org/">
-					<img src="assets/prime/pe.png" alt="Pacific Environment">
-				</a>
-				<a href="https://shipitzero.org/">
-					<img src="assets/prime/siz.png" alt="Ship it Zero">
-				</a>
-				<a href="https://clean-mobility.org/">
-					<img src="assets/prime/cmc.jpg" alt="Clean Mobility Collective">
-				</a>
-			</div>
-		</div>
-	</div>
-</div> 
+  
  <div class="footernav">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 mx-auto col-sm-12">
-				<a href="https://stand.earth/wp-content/uploads/2024/09/PRIME_POLLUTER-09.2024.pdf" target="_new"><Download size=20/>  Download PDF</a> <span>|</span> <a href="https://docs.google.com/document/d/1OJiHLlhuB4Mz3c6LqJlGFu-XhutHhXfEvLC3GOcB1GI/edit" target="_new"><FileText size=20/> Review Methodology</a> <span>|</span> <a href="https://act.stand.earth/page/51302/petition/1?ea.tracking.id=homepage" target="_new"><Megaphone size=20/> Take Action</a>
+				<a href="https://stand.earth/wp-content/uploads/2024/09/PRIME_POLLUTER-09.2024.pdf" target="_new">FAQ</a> <span>|</span> <a href="https://docs.google.com/document/d/1OJiHLlhuB4Mz3c6LqJlGFu-XhutHhXfEvLC3GOcB1GI/edit" target="_new"> Take Action</a> <span>|</span> <a href="https://act.stand.earth/page/51302/petition/1?ea.tracking.id=homepage" target="_new"> Learn More</a>
 			</div>
 		</div>
 	</div>
@@ -45,94 +17,78 @@
 
   <footer> 
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-sm-12 mx-auto about">
-				<div class="wordmark">
-					<a href="https://stand.earth">{@html wordmark}</a>
-				  </div>
-				  <p>
-					<a href="https://stand.earth">Stand.earth</a> delivers large-scale change by interrupting the systems that create environmental and climate crises, and challenging corporations and governments to treat people and the planet with respect.
-				  </p>
+		<div class="row foot">
+			<div class="wordmark col-4">
+				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="assets/fracking/stand_logo_white.png" alt="Stand.earth"></a>
+			</div>
+			<div class="logo col-4">
+				<a href="https://thefrackingtruth.ca" aria-label="The Fracking Truth" target="_self"><img src="assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
+			</div>
+			<div class="wordmark-right col-4">
+				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="assets/fracking/dogwood_white.png" alt="Dogwood BC"></a>
 			</div>
 		</div>
-		<div clas="row ">
-			<div class = "col-lg-6 col-sm-12 mx-auto mennu" style="text-align:center;">
-				<a href="https://www.stand.earth/our-work">Our Work</a>  <span>|</span>  <a href="https://www.stand.earth/donate">Ways to Give</a>		
-		</div>
 	</div>
-	
-	<div class="row">
-		<div class="col-lg-8 mx-auto col-sm-12 links">
-			<ul>
-				{#each links as link}
-				  <li>
-					<a href="{link.url}">
-					  {#if link.name == 'facebook'}
-						<FacebookIcon />
-						{:else if link.name == 'instagram'}
-						<InstagramIcon />
-						{:else if link.name == 'twitter'}
-						<TwitterIcon />
-						{:else if link.name == 'linkedin'}
-						<LinkedinIcon />
-					  {/if}
-					</a>
-				  </li>
-				{/each}
-			  </ul>
-		</div>
-	</div>
+
   </footer>
   
   <style>
+
+	.footernav {
+		background: #ff7c61;
+	}
+
+	.footernav a {
+		font-family:"BN";
+	}
+
 	footer {
-	  background-color: #000;
+	  background-color: #471c15;
 	  color: #fff;
-	  font-family: var(--sans);
 	  padding-top: 1rem;
 	  padding-bottom: 1rem;
 	}
-
-	a,
-	a:visited,
-	a:hover {
-	  color: var(--stand-tertiary);
+	
+	.foot {
+		display:flex;
+		width:100%;
+		margin:auto;
+		height:180px;
+		justify-content: space-between;
 	}
+
+	
 
 	ul {
 		padding-left:0px;
 	}
   
 	.wordmark {
-	  max-width: 10em;
-	  padding: 1em;
-	  margin:auto;
+		width: 12em;
+		display:inline;
+		padding:15px;
+		float:left;
+		padding-top:50px;
+	}
+
+	.wordmark img {
+		max-width:9em;
+	}
+
+	.logo {
+		width:9em;
+		padding-top:20px;
+	}
+
+	.wordmark-right {
+		width: 12em;
+		display:inline;
+		padding:15px;
+		float:right;
+		padding-top:50px;
 	}
   
-	.about {
-	  margin: 1rem auto;
-	  margin-top: 0;
-	  text-align: center;
-	}
-  
-	.links ul {
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: center;
-	}
-  
-	.links li {
-	  display: flex;
-	  padding: 0.5em 1em;
-	}
-  
-	.links a {
-	  display: flex;
-	  border: none;
-	  align-items: center;
-	  text-decoration: none;
-	  
-	}
+	
 
 	.mennu {
 		text-align:center;
@@ -181,15 +137,17 @@
 		color:#fff;
 		text-decoration:none;
 		padding:10px;
+		font-size:1.8rem;
 	}
 	.footernav span {
 		padding:10px;
+		color:#fff;
+		font-size:1.8rem;
 	}
 
 	.footernav {
 		padding:30px;
 		text-align:center;
-		background:#e50b12;
 	}
 
 	.logos img {
@@ -197,8 +155,21 @@
 		display:inline;
 	}
 
-	.logos {
-		text-align:center;
+	@media (max-width:768px) {
+
+	.wordmark, .wordmark-right, .logo {
+		width:5em;
+	}
+
+	.wordmark img {
+		width:3em;
+	}
+
+	header {
+		height:auto;
+	}
+
+
 	}
   </style>
   
