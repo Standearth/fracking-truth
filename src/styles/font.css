@@ -36,10 +36,10 @@
 
 @font-face {
 	font-family: "Inter";
-	src: url("assets/Inter.ttf") format("ttf");
+	src: url("/assets/Inter.ttf") format("ttf");
 }
 
 @font-face {
 	font-family: "BN";
-	src: url("assets/BN.otf") format("opentype");
+	src: url("/assets/BN.otf") format("opentype");
 }
