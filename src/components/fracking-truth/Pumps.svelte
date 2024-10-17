@@ -46,7 +46,7 @@ h1 {
 .cloud {
     min-height:900px;
     width:100%;
-    background-image:url('assets/fracking/bubble.png');
+    background-image:url('/assets/fracking/bubble.png');
     background-position:center bottom;
     background-size:cover;
     font-size:1.2rem;
