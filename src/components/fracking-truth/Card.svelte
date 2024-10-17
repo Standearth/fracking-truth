@@ -5,6 +5,7 @@
     export let Spoiler = "test";
     export let Color = "#000";
     export let Text_Color = "#bbb";
+    export let url = "";
     import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon } from "lucide-svelte";
 
     
