@@ -18,7 +18,7 @@
                     <div class="row">
                       <div class="col-12">
                         <h3 style="color:{Text_Color}">{Name}</h3>
-                        <img src="/assets/fracking/{Images}" alt="{Name}">
+                        <img src="assets/fracking/{Images}" alt="{Name}">
                         <h4 style="color:{Text_Color}">{Description}</h4>
                       </div>
                     </div>
