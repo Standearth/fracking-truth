@@ -2,7 +2,7 @@
     import { getContext } from "svelte";
     const copy = getContext("copy");
 </script>
-<img src="assets/fracking/flames.png">
+<img src="/assets/fracking/flames.png" alt="flames">
 <div class="action">
     <div class="container-xxl">
         <div class="row">
@@ -13,11 +13,11 @@
         </div>
         <div class="row form">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <img src="assets/fracking/letter.png" alt="Your letter to gas companies">
+                <img src="/assets/fracking/letter.webp" alt="Your letter to gas companies">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <h2>Tell gas companies to stop greenwashing their toxic products!</h2>
-                <iframe src="https://act.stand.earth/page/74529/petition/1" style="width:100%;height:600px;" title="Sign the petition"></iframe>
+                <iframe src="https://act.stand.earth/page/74529/petition/1" style="width:100%;height:620px;" title="Sign the petition" scrolling="no"></iframe>
             </div>
         </div>
     </div>

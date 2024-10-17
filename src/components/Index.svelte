@@ -18,24 +18,3 @@
 <Pumps />
 <Footer />
 
-<style>
-	.borderpaper {
-		width:100%;
-		height:50px;
-		background-image:url('assets/prime/paper.png');
-		background-size:cover;
-		background-position:center;
-		border:none;
-	}
-	.borderpaper-r {
-		width:100%;
-		height:50px;
-		background-image:url('assets/prime/paper.png');
-		background-size:cover;
-		background-position:center;
-		border:none;
-		rotate:-180deg;
-		position:relative;
-		top:-5px;
-	}
-</style>

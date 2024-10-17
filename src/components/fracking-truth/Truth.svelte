@@ -29,7 +29,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="assets/fracking/CMO.webp" alt="Chief Misconception Officer">
+                        <img src="/assets/fracking/CMO.webp" alt="Chief Misconception Officer">
                     </div>
                     </div>
                     </div>
@@ -51,7 +51,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="assets/fracking/Frackenstein.webp" alt="Frackenstien">
+                        <img src="/assets/fracking/Frackenstein.webp" alt="Frackenstien">
                     </div>
                     </div>
                     </div>
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="assets/fracking/Giant.webp" alt="Giant">
+                        <img src="/assets/fracking/Giant.webp" alt="Giant">
                     </div>
                     </div>
                     </div>
@@ -97,7 +97,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="assets/fracking/Devil.webp" alt="Devil">
+                        <img src="/assets/fracking/Devil.webp" alt="Devil">
                     </div>
                     </div>
                       </div>
@@ -120,7 +120,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="assets/fracking/CMO.webp" alt="Chief Misconception Officer">
+                        <img src="/assets/fracking/CMO.webp" alt="Chief Misconception Officer">
                     </div>
                     </div>
                       </div>

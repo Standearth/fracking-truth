@@ -1,15 +1,13 @@
 <script>
     import { getContext } from "svelte";
     import Card from "$components/fracking-truth/Card.svelte";
-    import { Splide, SplideSlide } from '@splidejs/svelte-splide';
     const copy = getContext("copy");
 </script>
-<img src="assets/fracking/bubbles.png" alt="bubbles">
 <div class="container-xxl">
     <div class="row">
         <div class="col-lg-6 col-md-8 col-sm-12">
             <div class="meet">
-                <img src="assets/fracking/skull.png" alt="Meet the Squad">
+                <img src="/assets/fracking/skull.png" alt="Meet the Squad">
                 <h2>Meet the <br/>Monster Squad</h2>
                 <p>There are so many Monster Misconceptions around using fracked gas to heat our homes. Why?</p>
                 <p>Because the gas industry has branded its product as “natural” to make it sound green so we keep using it — and executives can keep making massive profits. 

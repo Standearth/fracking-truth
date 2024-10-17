@@ -3,37 +3,42 @@
 	import wordmark_stand from "$svg/stand_logo_black.svg";
 	import { getContext } from "svelte";
 	const copy = getContext("copy");
+	export let image = "cmo_bg.webp";
+	export let background = "#fdbfb1" ;
+	export let border = "bubbles.png";
+	export let text_color = "#471c15";
+	export let accent_color = "#ff7c61";
 </script>
-<header>
+<header style='background:{background};'>
 	<div class="container-xxl">
 		<div class="top-header row">
 			<div class="wordmark col-4 col-sm-2">
-				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
+				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
 			</div>
 			<div class="logo col-4 col-sm-8">
-				<a href="https://thefrackingtruth.ca" aria-label="The Fracking Truth" target="_self"><img src="assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
+				<a href="/" aria-label="The Fracking Truth" target="_self"><img src="/assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
 			</div>
 			<div class="wordmark-right col-4 col-sm-2">
-				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="assets/dogwood.png" alt="Dogwood BC"></a>
+				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/dogwood.png" alt="Dogwood BC"></a>
 			</div>
 		</div>
 		<div class="hero row">
 			<div class="copy col-lg-7 col-md-8 col-sm-12">
-				<h1>The Monster Misconceptions of <span>UN</span>Natural Gas</h1>
-				<h3>Fracked gas is fuel on the <br/>fire of climate change. </h3>
-				<img src="assets/fracking/arrow_down.png" alt="learn more">
+				<h1 style="color:{text_color};">The Monster Misconceptions of <span style='color:{accent_color};'>UN</span>Natural Gas</h1>
+				<h3>Fracked gas is fuel on the <br/>fire of climate change.</h3>
+				<img src="/assets/fracking/arrow_down.png" alt="learn more">
 			</div>
 			<div class="goons col-lg-5 col-md-4 col-sm-12">
-				<img src="assets/fracking/illustration-goon-squad.webp" alt="Monster Misconceptions">
+				<img src="/assets/fracking/{image}" alt="Monster Misconceptions">
 			</div>
 		</div>
 	</div>
 </header>
+<img src="/assets/fracking/{border}" alt="bubbles">
 
 <style>
 	header {
 		height:90vh;
-		background:#fdbfb1;
 	}
 
 	.top-header {
@@ -58,6 +63,10 @@
 	.logo {
 		width:9em;
 		padding-top:20px;
+	}
+	
+	.logo a {
+		height:150px;
 	}
 
 	.wordmark-right {
@@ -85,7 +94,6 @@
 		padding-top:20%;
 		font-family:"BN";
 		font-size:4.8rem;
-		color:#471c15;
 	}
 
 	.hero h3 {
