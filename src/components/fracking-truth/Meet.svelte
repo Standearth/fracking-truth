@@ -13,18 +13,6 @@
                 <p>Because the gas industry has branded its product as “natural” to make it sound green so we keep using it — and executives can keep making massive profits. 
                 </p>
                 <p><strong>But we won’t be duped. </strong></p>
-                <a data-sveltekit-reload href="/frackenstein">
-                    <p>Frackenstein</p>
-                </a>
-                <a data-sveltekit-reload href="/devil">
-                    <p>Devil</p>
-                </a>
-                <a data-sveltekit-reload href="/giant">
-                    <p>Giant</p>
-                </a>            
-                <a data-sveltekit-reload href="/cmo">
-                    <p>CMO</p>
-                </a>            
             </div>
         </div>
         <div class="col-lg-6 col-md-4 col-sm-12 meet-video">

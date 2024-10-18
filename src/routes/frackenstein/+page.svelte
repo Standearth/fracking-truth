@@ -12,6 +12,7 @@
 	import Pumps from "$components/fracking-truth/Pumps.svelte";
 
 	export let data;
+	data.slug = 'frackenstein';
 	let title, description, image, background, border, text_color, accent_color, ogimage;
 	version();
 	switch(data.slug) {
@@ -52,12 +53,11 @@
 			ogimage = "cmo_bg.webp";
 			break;
 	}
-	const url = "URL";
 	setContext("copy", copy);
 	setContext("data", data.data);
 </script>
-<Meta {title} {description} {url} {ogimage} />
-<Header {title} {description} {url} {background} {border} {image} {text_color} {accent_color}/>
+<Meta {title} {description} {ogimage} />
+<Header {title} {description} {background} {border} {image} {text_color} {accent_color}/>
 <Meet/>
 <Action />
 <Truth />
