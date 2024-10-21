@@ -23,12 +23,12 @@
 			</div>
 		</div>
 		<div class="hero row">
-			<div class="copy col-lg-7 col-md-8 col-sm-12">
+			<div class="copy col-xl-7 col-lg-8 col-md-8 col-sm-12">
 				<h1 style="color:{text_color};">The Monster Misconceptions of <span style='color:{accent_color};'>UN</span>Natural Gas</h1>
 				<h3>Fracked gas is fuel on the <br/>fire of climate change.</h3>
 				<img src="/assets/fracking/arrow_down.png" alt="learn more">
 			</div>
-			<div class="goons col-lg-5 col-md-4 col-sm-12">
+			<div class="goons col-xl-5 col-lg-4 col-md-4 col-sm-12">
 				<img src="/assets/fracking/{image}" alt="Monster Misconceptions">
 			</div>
 		</div>
@@ -126,6 +126,14 @@
 		z-index:10;
 	}	
 
+	@media (max-width:1295px) {
+		.hero h1 {
+			font-size:4rem;
+			padding-top:40%;
+		}
+
+	}
+	
 	@media (max-width:1200px) {
 		.hero h1 {
 			font-size:3rem;

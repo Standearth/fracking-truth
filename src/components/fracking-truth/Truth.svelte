@@ -15,6 +15,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <img src="/assets/fracking/cmocloud.webp" alt="Chief Misconception Officer">
                         Just a profit-driven scheme
                     </button>
                   </h2>
@@ -29,7 +30,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="/assets/fracking/CMO.webp" alt="Chief Misconception Officer">
+                        <img src="/assets/fracking/cmo_bg.webp" alt="Chief Misconception Officer">
                     </div>
                     </div>
                     </div>
@@ -38,6 +39,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <img src="/assets/fracking/Frackenstein.webp" alt="Frackenstien">
                         Comes from destructive fracking
                     </button>
                   </h2>
@@ -51,7 +53,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="/assets/fracking/Frackenstein.webp" alt="Frackenstien">
+                        <img src="/assets/fracking/frackenstein_bg.webp" alt="Frackenstien">
                     </div>
                     </div>
                     </div>
@@ -60,6 +62,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <img src="/assets/fracking/Giant.webp" alt="Giant">
                         A pollution accelerator
                     </button>
                   </h2>
@@ -69,13 +72,13 @@
                             <div class="col-lg-8 col-md-8 col-sm-12">
                         <ul>
                             <li>When fracked gas is flared at wells and leaks from pipelines, a dangerous greenhouse gas — methane — escapes</li>
-                            <li>Methane heats the world in the near term 80 times more than carbon dioxide</li>
+                            <li>Methane heats the world 80 times more than carbon dioxide</li>
                             <li>Methane is responsible for 30% of global warming since pre-industrial times, and its impacts are quickly growing </li>
                             <li>In Canada, burning fracked gas to heat buildings is the third largest source of emissions nationally, and a top culprit in most cities</li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="/assets/fracking/Giant.webp" alt="Giant">
+                        <img src="/assets/fracking/green_bg.webp" alt="Giant">
                     </div>
                     </div>
                     </div>
@@ -84,6 +87,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                        <img src="/assets/fracking/Devil.webp" alt="Devil">
                         Dangerous from the ground to homes
                       </button>
                     </h2>
@@ -97,7 +101,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="/assets/fracking/Devil.webp" alt="Devil">
+                        <img src="/assets/fracking/devil_bg.webp" alt="Devil">
                     </div>
                     </div>
                       </div>
@@ -106,6 +110,7 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                        <img src="/assets/fracking/cmocloud.webp" alt="Chief Misconception Officer">
                         Bad for our wallets
                       </button>
                     </h2>
@@ -120,7 +125,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img src="/assets/fracking/CMO.webp" alt="Chief Misconception Officer">
+                        <img src="/assets/fracking/cmo_bg.webp" alt="Chief Misconception Officer">
                     </div>
                     </div>
                       </div>
@@ -151,9 +156,16 @@
 
     .accordion button {
         font-family:"Inter";
-        font-size:1.2rem;
-        font-weight:300;
+        font-size:1.4rem;
+        font-weight:600;
 
+    }
+
+    .accordion-header img {
+        width:80px;
+        padding-right:20px; 
+        float:left;
+        display:inline;
     }
 
     .accordion-header {

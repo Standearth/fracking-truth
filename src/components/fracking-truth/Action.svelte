@@ -13,7 +13,7 @@
         </div>
         <div class="row form">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <img src="/assets/fracking/letter.webp" alt="Your letter to gas companies">
+                <img src="/assets/fracking/homepage_letter.webp" alt="Your letter to gas companies">
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <h2>Tell gas companies to stop greenwashing their toxic products!</h2>

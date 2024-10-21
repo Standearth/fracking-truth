@@ -4,6 +4,8 @@ github:
 	rm -rf docs
 	cp -r build docs
 	touch docs/.nojekyll
+	touch docs/CNAME 
+	echo "thefrackingtruth.ca" >> docs/CNAME
 	git add -A
 	git commit -m "update github pages"
 	git push

@@ -69,6 +69,7 @@ iframe {
     padding:10px;
     color:#fff;
     border-radius:10px;
+    min-width:300px;
 }
 
 </style>
