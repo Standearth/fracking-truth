@@ -120,4 +120,35 @@
 	.wordmark a:hover {
 		background-color: transparent;
 	}
+
+    @media (max-width:768px) {
+		.hero h1 {
+			font-size:2rem;
+			padding-top:20%;
+		}
+
+		.goons img {
+		min-width:80%;
+		width:100%;
+		margin:auto;
+		z-index:10;
+		position:initial;
+		left:0px;
+		
+	}
+
+	.wordmark, .wordmark-right, .logo {
+		width:5em;
+	}
+
+	.wordmark img {
+		width:3em;
+	}
+
+	header {
+		height:auto;
+	}
+
+
+	}
 </style>
