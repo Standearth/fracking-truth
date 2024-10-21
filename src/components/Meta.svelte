@@ -1,7 +1,7 @@
 <script>
 	export let title = "The Fracking Truth - Monster Misconceptions of Unnatural Gas";
 	export let description = "Fracked gas is fuel on the fire of climate change";
-	export let url = "https://standearth.github.io/fracking-truth";
+	export let url = "https://thefrackingtruth.ca";
 	export let keywords = "";
 	export let ogimage = "illustration-goon-squad.webp";
 	export let preloadFont = [];
@@ -23,7 +23,7 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_US" />
 
-	<meta property="og:image" content="{url}{slug}/assets/fracking/{ogimage}" />
+	<meta property="og:image" content="{url}/assets/fracking/{ogimage}" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="628" />
@@ -33,20 +33,20 @@
 	<meta name="twitter:creator" content="@standearth" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image:src" content="{url}{slug}/assets/fracking/{ogimage}" />
+	<meta name="twitter:image:src" content="{url}/assets/fracking/{ogimage}" />
 
 	<meta name="robots" content="max-image-preview:large" />
 
 	<link rel="canonical" href="{url}{slug}" />
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-39F5CEFSFR"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X44KFXXS70"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-  
-	  gtag('config', 'G-39F5CEFSFR');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-X44KFXXS70');
 	</script>
 
 	{#each preloadFont as href}
