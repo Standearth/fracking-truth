@@ -38,7 +38,7 @@
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h2>Sign the petition</h2>
-                <iframe src="https://act.stand.earth/page/74529/petition/1" style="width:100%;height:620px;" title="Sign the petition" scrolling="no"></iframe>
+                <iframe src="https://act.stand.earth/page/74672/petition/1" style="width:100%;height:620px;" title="Sign the petition" scrolling="no"></iframe>
             </div>
         </div>
     </div>
