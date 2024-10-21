@@ -5,6 +5,7 @@
 	export let keywords = "";
 	export let ogimage = "illustration-goon-squad.webp";
 	export let preloadFont = [];
+	export let slug = "";
 </script>
 
 <svelte:head>
@@ -12,15 +13,17 @@
 	<meta name="description" content={description} />
 	<meta name="author" content="Stand.earth" />
 	<meta name="news_keywords" content={keywords} />
+	<link rel="icon" type="image/x-icon" href="/assets/fracking/small_logo.png">
+
 
 	<meta property="og:title" content={title} />
 	<meta property="og:site_name" content="Stand.earth" />
-	<meta property="og:url" content={url} />
+	<meta property="og:url" content={url}{slug} />
 	<meta property="og:description" content={description} />
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_US" />
 
-	<meta property="og:image" content="{url}/assets/fracking/{ogimage}" />
+	<meta property="og:image" content="{url}{slug}/assets/fracking/{ogimage}" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="628" />
@@ -30,11 +33,11 @@
 	<meta name="twitter:creator" content="@standearth" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image:src" content="{url}/assets/fracking/{ogimage}" />
+	<meta name="twitter:image:src" content="{url}{slug}/assets/fracking/{ogimage}" />
 
 	<meta name="robots" content="max-image-preview:large" />
 
-	<link rel="canonical" href="{url}/" />
+	<link rel="canonical" href="{url}{slug}" />
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-39F5CEFSFR"></script>

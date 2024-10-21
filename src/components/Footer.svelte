@@ -22,7 +22,7 @@
 				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_white.png" alt="Stand.earth"></a>
 			</div>
 			<div class="logo col-4">
-				<a href="https://thefrackingtruth.ca" aria-label="The Fracking Truth" target="_self"><img src="/assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
+				<a href="https://thefrackingtruth.ca" aria-label="The Fracking Truth" target="_self"><img src="/assets/fracking/small_logo.png" alt="Fracking Truth"></a>
 			</div>
 			<div class="wordmark-right col-4">
 				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/fracking/dogwood_white.png" alt="Dogwood BC"></a>

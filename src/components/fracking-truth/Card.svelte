@@ -5,8 +5,8 @@
     export let Spoiler = "test";
     export let Color = "#000";
     export let Text_Color = "#bbb";
-    export let url = "";
-    import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon } from "lucide-svelte";
+    export let Slug = "";
+    import { FacebookIcon, TwitterIcon, LinkedinIcon } from "lucide-svelte";
 
     
     </script>
@@ -33,11 +33,10 @@
                     <div class="col-12" style="text-align:center;">
                       <h4 style="color:{Text_Color}">{Spoiler}</h4>
                       <div class="share">
-                        <h5>Share this monster misconception:</h5>
-                        <a href="https://instagram.com"><InstagramIcon /></a>
-                        <a href="https://facebook.com"><FacebookIcon /></a>
-                        <a href="https://twitter.com"><TwitterIcon /></a>
-                        <a href="https://linkedin.com"><LinkedinIcon /></a>
+                        <h5>Share this Monster Misconception:</h5>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thefrackingtruth.ca/{Slug}"><FacebookIcon /></a>
+                        <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Monster%20Misconception%20about%20'natural'%20gas.%20https%3A//thefrackingtruth.ca/{Slug}"><TwitterIcon /></a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//thefrackingtruth.ca/{Slug}"><LinkedinIcon /></a>
                       </div>
                     </div>
                   </div>
@@ -73,9 +72,14 @@
     }
     
     .share {
-        position:absolute;
-        bottom:20%;
+        
         z-index:99;
+        width:80%;
+        margin:auto;
+        background-image:url("/assets/fracking/box_bg.png");
+        background-size:cover;
+        background-position:center center;
+        padding:5px 20px 20px 20px;
     }
 
     .share a {
@@ -90,7 +94,7 @@
       background-color: transparent;
       max-width: 800px;
       padding-top:50px;
-      height: 600px;
+      height: 550px;
       margin:auto;
       border: none;
       perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -109,7 +113,7 @@
       height: 100%;
       text-align: center;
       transition: transform 0.8s;
-      transition-delay:0.5s;
+      transition-delay:0.2s;
       transform-style: preserve-3d;
     }
     
