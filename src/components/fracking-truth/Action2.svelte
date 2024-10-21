@@ -32,7 +32,7 @@
                 <img src="/assets/fracking/illustration-fracking-dangers.webp" alt="monsters">
             </div>
         </div>
-        <div class="row">
+        <div class="row form">
             <div class="col-lg-7 col-md-7 col-sm-12 mx-auto">
                 <img src="/assets/fracking/ads_pet.png" alt="petition text">
             </div>
@@ -54,10 +54,14 @@
         text-align:center;
     }
 
-    .form {
-        padding-top:50px;
+    .heading {
+        padding-top:30px;
+        padding-bottom:30px;
     }
 
+    .form {
+        text-align:center;
+    }
 
     .action p {
         font-size:1.5rem;
