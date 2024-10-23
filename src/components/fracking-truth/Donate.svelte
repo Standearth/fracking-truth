@@ -1,6 +1,14 @@
 <script>
     import { getContext } from "svelte";
     const copy = getContext("copy");
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
+    let amount = '';
+    onMount(() => {
+        // save the id parameter if it's in the url or an empty string
+        amount = $page.url.searchParams.get('amount') || '';
+    });
 </script>
 <div class="action">
     <div class="container-xxl">
@@ -36,7 +44,11 @@
 				<img src="/assets/fracking/cmo_bg.webp" alt="Monster Squad">
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 iframewrap">
-                <iframe src="https://act.stand.earth/page/74842/donate/1" style="width:100%;height:1450px;" title="Make a donation"></iframe>
+				{#if amount != ''}
+                	<iframe src="https://act.stand.earth/page/74842/donate/1?transaction.donationAmt={amount}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
+				{:else}
+					<iframe src="https://act.stand.earth/page/74842/donate/1" style="width:100%;height:1450px;" title="Make a donation"></iframe>
+				{/if}
             </div>
         </div>
     </div>
