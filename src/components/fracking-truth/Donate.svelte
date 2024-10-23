@@ -5,9 +5,11 @@
 	import { onMount } from 'svelte';
 
     let amount = '';
+	let chain = '';
     onMount(() => {
         // save the id parameter if it's in the url or an empty string
         amount = $page.url.searchParams.get('amount') || '';
+		chain = $page.url.searchParams.has('chain');
     });
 </script>
 <div class="action">
@@ -44,8 +46,10 @@
 				<img src="/assets/fracking/cmo_bg.webp" alt="Monster Squad">
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 iframewrap">
-				{#if amount != ''}
-                	<iframe src="https://act.stand.earth/page/74842/donate/1?transaction.donationAmt={amount}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
+				{#if amount != '' && chain == true}
+                	<iframe src="https://act.stand.earth/page/74842/donate/1?chain&transaction.donationAmt={amount}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
+				{:else if amount != '' && chain == false}
+					<iframe src="https://act.stand.earth/page/74842/donate/1?transaction.donationAmt={amount}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
 				{:else}
 					<iframe src="https://act.stand.earth/page/74842/donate/1" style="width:100%;height:1450px;" title="Make a donation"></iframe>
 				{/if}
