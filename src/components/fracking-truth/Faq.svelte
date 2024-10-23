@@ -15,48 +15,40 @@
 				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/dogwood.png" alt="Dogwood BC"></a>
 			</div>
 		</div>
-        <div class="row heading">
-            <div class="col-8 mx-auto">
-                <h1>Help stop gas industry misinformation</h1>
-            </div>
-        </div>
-        <div class="row form">
-            <div class="col-lg-7 col-md-7 col-sm-12 mx-auto">
-                <p><strong>Gas industry misinformation is getting in the way of climate action. </strong></p>
-
-				<p>We’re doing everything we can to dispel myths and encourage climate-friendly policies at all levels of government – municipal, provincial, and federal. </p>
-
-				<p>But we need your help. Gas companies and associations have a lot of money and power. It takes a lot to debunk their misinformation, counter their lobbying efforts, and lead campaigns for a transition to clean energy. </p>
-
-				<p>With your help, we can do more to challenge industry lies and reach more people with accurate information. More awareness leads to more action. </p>
-
-				<p>Together we can take on corporate gas giants and relegate them to the dustbin of history - where they belong. </p>
-
-				<h2>Give today to create a path to a clean, healthy, and livable future!  </h2>
-
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 iframewrap">
-                <iframe src="https://act.stand.earth/page/74842/donate/1" style="width:100%;height:720px;" title="Make a donation"></iframe>
-            </div>
-        </div>
-        <div class="row form">
-            <div class="col-8 mx-auto">
-                <img src="/assets/fracking/cmo_bg.webp" alt="Monster Squad">
-            </div>
-        </div>
     </div>
 </div>
 <img src="/assets/fracking/bubbles.png" alt="bubbles">
+<div class="container faq">
+	<div class="row heading">
+		<div class="col-8 mx-auto">
+			<h1>Help stop gas industry misinformation</h1>
+		</div>
+	</div>
+	<div class="row form">
+		<div class="col-lg-7 col-md-7 col-sm-12 mx-auto">
+			<p><strong>Gas industry misinformation is getting in the way of climate action. </strong></p>
+
+			<p>We’re doing everything we can to dispel myths and encourage climate-friendly policies at all levels of government – municipal, provincial, and federal. </p>
+
+			<p>But we need your help. Gas companies and associations have a lot of money and power. It takes a lot to debunk their misinformation, counter their lobbying efforts, and lead campaigns for a transition to clean energy. </p>
+
+			<p>With your help, we can do more to challenge industry lies and reach more people with accurate information. More awareness leads to more action. </p>
+
+			<p>Together we can take on corporate gas giants and relegate them to the dustbin of history - where they belong. </p>
+
+			<h2>Give today to create a path to a clean, healthy, and livable future!  </h2>
+
+		</div>
+		<div class="col-8 mx-auto">
+			<img src="/assets/fracking/cmo_bg.webp" alt="Monster Squad">
+		</div>
+	</div>
+</div>
 <style>
     .action {
         background:#fdbfb1;
         text-align:left;
     }
-
-	.iframewrap {
-		background:#fff;
-		border-radius:12px;
-	}
 
     .heading {
         text-align:center;
@@ -68,7 +60,7 @@
     }
 
     .form {
-        text-align:left;
+        text-align:center;
     }
 
     .action p {
