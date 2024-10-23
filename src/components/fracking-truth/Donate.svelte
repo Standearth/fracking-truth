@@ -33,15 +33,10 @@
 				<p>Together we can take on corporate gas giants and relegate them to the dustbin of history - where they belong. </p>
 
 				<h2>Give today to create a path to a clean, healthy, and livable future!  </h2>
-
+				<img src="/assets/fracking/cmo_bg.webp" alt="Monster Squad">
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 iframewrap">
-                <iframe src="https://act.stand.earth/page/74842/donate/1" style="width:100%;height:720px;" title="Make a donation"></iframe>
-            </div>
-        </div>
-        <div class="row form">
-            <div class="col-8 mx-auto">
-                <img src="/assets/fracking/cmo_bg.webp" alt="Monster Squad">
+                <iframe src="https://act.stand.earth/page/74842/donate/1" style="width:100%;height:1450px;" title="Make a donation"></iframe>
             </div>
         </div>
     </div>
