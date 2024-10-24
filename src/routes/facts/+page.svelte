@@ -14,7 +14,7 @@
 	let title, description, ogimage, slug;
 	title = "Facts - The Fracking Truth";
 	description ="All of the facts on un-natural gas and clean alternatives.";
-	ogimage = "cmo_bg.webp";
+	ogimage = "cmo_bg.png";
 	slug = "/facts";
 			
 	setContext("copy", copy);

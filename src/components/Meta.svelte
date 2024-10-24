@@ -3,7 +3,7 @@
 	export let description = "Fracked gas is fuel on the fire of climate change";
 	export let url = "https://thefrackingtruth.ca";
 	export let keywords = "";
-	export let ogimage = "illustration-goon-squad.webp";
+	export let ogimage = "cmo_bg.png";
 	export let preloadFont = [];
 	export let slug = "";
 </script>

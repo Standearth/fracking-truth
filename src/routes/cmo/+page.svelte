@@ -24,7 +24,7 @@
 			border = "bubbles_yellow.png";	
 			text_color = "#778203";
 			accent_color = "#f8ffa5";
-			ogimage = "frackenstein_bg.webp";
+			ogimage = "frackenstein_bg.png";
 			slug = "/frackenstein";
 			break;
 		case 'giant':
@@ -35,7 +35,7 @@
 			border = "bubbles_green.png";	
 			text_color = "#00ab47";
 			accent_color = "#0b190e";
-			ogimage = "green_bg.webp";
+			ogimage = "green_bg.png";
 			slug = "/giant";
 			break;
 		case 'devil':
@@ -46,14 +46,14 @@
 			border = "bubbles_blue.png";	
 			text_color = "#0392b2";
 			accent_color = "#0d1d39";
-			ogimage = "devil_bg.webp";
+			ogimage = "devil_bg.png";
 			slug = "/devil";
 			break;
 		case 'cmo':
 			title = "Chief Misconception Officer - Monster Misconceptions of Unnatural Gas";
 			description ="Fracked gas is fuel on the fire of climate change";
 			image = "cmo_bg.webp";
-			ogimage = "cmo_bg.webp";
+			ogimage = "cmo_bg.png";
 			slug = "/cmo";
 			break;
 	}

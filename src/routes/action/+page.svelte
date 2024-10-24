@@ -12,9 +12,9 @@
 	import Pumps from "$components/fracking-truth/Pumps.svelte";
 	export let data;
 	let title, description, ogimage, slug;
-	title = "Take Action - Tell federal politicians to ban fossil fuel advertising";
+	title = "Take Action - The Fracking Truth";
 	description ="We have a rare opportunity right now to stop fossil fuel companies from advertising their polluting products to us.";
-	ogimage = "cmo_bg.webp";
+	ogimage = "cmo_bg.png";
 	slug = "/action";
 			
 	setContext("copy", copy);
