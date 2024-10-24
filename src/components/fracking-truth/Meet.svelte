@@ -62,9 +62,6 @@ iframe {
 .share {
     text-align:center;
     padding-top:30px;
-    min-height: 150px;
-    padding: 20px;
-    margin-top: 40px;
 }
 
 .share a {

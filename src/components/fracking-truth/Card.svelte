@@ -79,7 +79,9 @@
         background-image:url("/assets/fracking/box_bg.png");
         background-size:cover;
         background-position:center center;
-        padding:5px 20px 20px 20px;
+        min-height: 150px;
+        padding: 20px;
+        margin-top: 40px;
     }
 
     .share a {
