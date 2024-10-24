@@ -91,6 +91,10 @@
         font-weight:300;
     }
 
+	.heading {
+		margin-bottom:100px;
+	}
+
 	.heading li {
 		padding-bottom:5px;
 		padding-top:5px;
