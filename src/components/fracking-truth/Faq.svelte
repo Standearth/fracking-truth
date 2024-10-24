@@ -84,16 +84,13 @@
 
     .form {
         text-align:center;
+		padding-top:20px;
     }
 
     .action p {
         font-size:1.5rem;
         font-weight:300;
     }
-
-	.heading {
-		margin-bottom:100px;
-	}
 
 	.heading li {
 		padding-bottom:5px;
