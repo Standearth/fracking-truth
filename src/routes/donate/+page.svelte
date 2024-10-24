@@ -12,8 +12,8 @@
 	import Pumps from "$components/fracking-truth/Pumps.svelte";
 	export let data
 	let title, description, ogimage, slug;
-	title = "Make a donation - Help stop gas industry misinformation";
-	description ="Give today to create a path to a clean, healthy, and livable future!";
+	title = "FAQ - The Fracking Truth";
+	description ="All of the facts on un-natural gas and clean alternatives";
 	ogimage = "cmo_bg.webp";
 	slug = "/donate";
 			

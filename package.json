@@ -41,6 +41,7 @@
 	"dependencies": {
 		"@splidejs/splide": "^4.1.4",
 		"@splidejs/svelte-splide": "^0.2.9",
+		"htmlparser2": "^9.1.0",
 		"layercake": "^8.3.4"
 	}
 }

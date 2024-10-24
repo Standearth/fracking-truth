@@ -2,9 +2,9 @@
     import { getContext } from "svelte";
     const copy = getContext("copy");
 </script>
-<div class="action">
-    <div class="container-xxl">
-        <div class="top-header row">
+<div class="faq">
+	<div class="container-xxl">
+		<div class="top-header row">
 			<div class="wordmark col-4 col-sm-2">
 				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
 			</div>
@@ -15,49 +15,72 @@
 				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/dogwood.png" alt="Dogwood BC"></a>
 			</div>
 		</div>
-    </div>
+		<div class="row form">
+			<div class="col-lg-10 col-md-10 col-sm-12 mx-auto">
+				<h1>{copy.FAQ.Heading}</h1>
+			</div>
+		</div>
+	</div>
 </div>
 <img src="/assets/fracking/bubbles.png" alt="bubbles">
-<div class="container faq">
+<div class="container">
 	<div class="row heading">
-		<div class="col-8 mx-auto">
-			<h1>Help stop gas industry misinformation</h1>
-		</div>
-	</div>
-	<div class="row form">
-		<div class="col-lg-7 col-md-7 col-sm-12 mx-auto">
-			<p><strong>Gas industry misinformation is getting in the way of climate action. </strong></p>
-
-			<p>We’re doing everything we can to dispel myths and encourage climate-friendly policies at all levels of government – municipal, provincial, and federal. </p>
-
-			<p>But we need your help. Gas companies and associations have a lot of money and power. It takes a lot to debunk their misinformation, counter their lobbying efforts, and lead campaigns for a transition to clean energy. </p>
-
-			<p>With your help, we can do more to challenge industry lies and reach more people with accurate information. More awareness leads to more action. </p>
-
-			<p>Together we can take on corporate gas giants and relegate them to the dustbin of history - where they belong. </p>
-
-			<h2>Give today to create a path to a clean, healthy, and livable future!  </h2>
-
-		</div>
-		<div class="col-8 mx-auto">
-			<img src="/assets/fracking/cmo_bg.webp" alt="Monster Squad">
+		<div class="col-lg-10 col-md-10 col-sm-12">
+			
+			{#each copy.FAQ.top as t,i}
+				<h2 style="padding-top:30px;">{t.heading}</h2>
+				<p>{t.description}</p>
+				<div class="accordion accordion-flush" id="accordion-{i}">
+					{#each t.sections as s,v}
+						<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{i}{v}" aria-expanded="true" aria-controls="collapse-{i}{v}">
+								{s.title}
+							</button>
+						</h2>
+						<div id="collapse-{i}{v}" class="accordion-collapse collapse" data-bs-parent="#accordion-{i}">
+							<div class="accordion-body">
+								<div class="row">
+									<div class="col-lg-10 col-md-8 col-sm-12">
+										<ul>
+											{#each s.items as i}
+												<li>{@html i}
+												{#if i.subitems}
+													<ul>
+													{#each i.subitems as si}
+														<li>{@html si}</li>
+													{/each}
+													</ul>
+												{/if}
+												</li>
+											{/each}
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					{/each}
+				</div>
+			{/each}
 		</div>
 	</div>
 </div>
+
 <style>
+
+	hr {
+		border-color:#fdbfb1;
+		border-top:5px solid #fdbfb1;
+	}
     .action {
+		background:#fdbfb1;
+	}
+	
+	.faq {
         background:#fdbfb1;
         text-align:left;
-    }
-
-    .heading {
-        text-align:center;
-    }
-
-    .heading {
-        padding-top:30px;
-        padding-bottom:30px;
-    }
+	}
 
     .form {
         text-align:center;
@@ -68,7 +91,12 @@
         font-weight:300;
     }
 
-    .action h2, .action h1 {
+	.heading li {
+		padding-bottom:5px;
+		padding-top:5px;
+	}
+
+    .heading h2, .faq h1 {
         font-family:"BN";
     }
 
@@ -151,4 +179,62 @@
 
 
 	}
+
+	.accordion {
+        font-family:"Inter";
+        font-weight:300;
+        text-align:left;
+    }
+
+    .accordion button {
+        font-family:"Inter";
+        font-size:1.4rem;
+        font-weight:600;
+
+    }
+
+    .accordion-header img {
+        width:80px;
+        padding-right:20px; 
+        float:left;
+        display:inline;
+    }
+
+    .accordion-header {
+        max-width:700px;
+        border-bottom:1px solid #000;
+    }
+
+    .accordion-item {
+        border:none;
+    }
+
+    .accordion-item img {
+        max-width:280px;
+    }
+
+    .accordion-item li {
+        padding-top:10px;
+        font-size:1.2rem;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background:none;
+        border:none;
+        color:#000;
+    }
+
+    .accordion-button:hover {
+        border:none;
+        background:none;
+    }
+
+    button:focus:not(:focus-visible), a:focus:not(:focus-visible), a[role="button"]:focus:not(:focus-visible), input:focus:not(:focus-visible), select:focus:not(:focus-visible), textarea:focus:not(:focus-visible) {
+        outline:none;
+    }
+
+    .accordion-button:focus {
+        border:none;
+        box-shadow:none;
+    }
 </style>

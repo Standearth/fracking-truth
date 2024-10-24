@@ -8,7 +8,7 @@
 	let chain = '';
     onMount(() => {
         // save the id parameter if it's in the url or an empty string
-        amount = $page.url.searchParams.get('transatransaction.donationAmt') || '';
+        amount = $page.url.searchParams.get('amount') || '';
 		chain = $page.url.searchParams.has('chain');
     });
 </script>
