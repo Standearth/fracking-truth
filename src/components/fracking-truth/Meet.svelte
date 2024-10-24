@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="col-lg-6 col-md-4 col-sm-12 meet-video">
-            <div style="padding:50% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/947204185?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="FORWARD! For a Frack Free Future"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/St1XZCxEgjU?si=g8C2rhGuqQpp_EtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="share">
                 <a style="background:#8134AF;" href="https://instagram.com">Share on Instagram <InstagramIcon /></a>
                 <a style="background:#4267B2;" href="https://facebook.com">Share on Facebook <FacebookIcon /></a>
@@ -62,6 +62,9 @@ iframe {
 .share {
     text-align:center;
     padding-top:30px;
+    min-height: 150px;
+    padding: 20px;
+    margin-top: 40px;
 }
 
 .share a {

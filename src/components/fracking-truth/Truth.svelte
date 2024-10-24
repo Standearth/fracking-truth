@@ -25,7 +25,7 @@
                         <div class="col-lg-8 col-md-8 col-sm-12">
                         <ul>
                             <li>Fracked gas is marketed as “natural” by the gas industry to make people think it’s clean and safe – it’s not </li>
-                            <li>There’s nothing natural about “natural” gas – it’s a fossil fuel like oil and coal that harm communities and pumps methane (a greenhouse gas) into our atmosphere </li>
+                            <li>There’s nothing natural about “natural” gas – it’s a fossil fuel like oil and coal that harms communities and pumps methane (a greenhouse gas) into our atmosphere </li>
                             <li>Gas companies and secretive astroturf associations are running huge greenwashing campaigns to cover up the harms of fracked gas so they can keep raking in profits </li>
                         </ul>
                     </div>

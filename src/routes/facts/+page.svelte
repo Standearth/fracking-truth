@@ -10,12 +10,12 @@
 	import Action from "$components/fracking-truth/Action.svelte";
 	import Truth from "$components/fracking-truth/Truth.svelte";
 	import Pumps from "$components/fracking-truth/Pumps.svelte";
-	export let data
+	export let data;
 	let title, description, ogimage, slug;
-	title = "FAQ - The Fracking Truth";
+	title = "Facts - The Fracking Truth";
 	description ="All of the facts on un-natural gas and clean alternatives.";
 	ogimage = "cmo_bg.webp";
-	slug = "/action";
+	slug = "/facts";
 			
 	setContext("copy", copy);
 	setContext("data", data.data);

@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 mx-auto col-sm-12">
-				<a href="https://stand.earth/wp-content/uploads/2024/09/PRIME_POLLUTER-09.2024.pdf" target="_new">FAQ</a> <span>|</span> <a href="https://docs.google.com/document/d/1OJiHLlhuB4Mz3c6LqJlGFu-XhutHhXfEvLC3GOcB1GI/edit" target="_new"> Take Action</a> <span>|</span> <a href="https://act.stand.earth/page/51302/petition/1?ea.tracking.id=homepage" target="_new"> Learn More</a>
+				<a href="/facts">FACTS</a> <span>|</span> <a href="/action"> Take Action</a> <span>|</span> <a href="https://act.stand.earth/page/51302/petition/1?ea.tracking.id=homepage" target="_new"> Learn More</a> <span>|</span> <a href="/donate"> DONATE</a>
 			</div>
 		</div>
 	</div>

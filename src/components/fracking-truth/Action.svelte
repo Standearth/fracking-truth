@@ -3,11 +3,12 @@
     const copy = getContext("copy");
 </script>
 <img src="/assets/fracking/flames.png" alt="flames">
+<a name="take-action"></a>
 <div class="action">
     <div class="container-xxl">
         <div class="row">
             <div class="col-8 mx-auto">
-                <p>We know fracked gas is a fossil fuel like oil and coal which pollute communities and warm the planet. </p>
+                <p>We know fracked gas is a fossil fuel like oil and coal, all of which pollute communities and heat the planet. </p>
                 <p>And we know there are cleaner, safer, and more affordable ways to heat our homes — like using an electric heat pump. </p>
             </div>
         </div>
@@ -32,6 +33,10 @@
         padding-top:20px;
     }
 
+    .form img {
+        padding-top:100px;
+    }
+
     .action p {
         font-size:1.5rem;
         font-weight:300;
@@ -39,5 +44,11 @@
 
     .action h2 {
         font-family:"BN";
+    }
+
+    @media (max-width:769px) {
+        .form img {
+            padding-top:0px;
+        }
     }
 </style>

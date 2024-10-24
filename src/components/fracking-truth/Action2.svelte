@@ -22,10 +22,10 @@
         </div>
         <div class="row form">
             <div class="col-lg-7 col-md-7 col-sm-12 mx-auto">
-                <p>We have a rare opportunity right now to stop fossil fuel companies from advertising their polluting products to us.</p>
+                <p><strong>We have a rare opportunity right now to stop fossil fuel companies from advertising their polluting products to us.</strong></p>
                 <p>There's a proposal in front of the federal parliament (Bill C-372) that would prohibit oil and gas companies from promoting fossil fuels (with a few minor exceptions). It would also prohibit the industry from promoting its products in a way that is false, misleading, or deceptive.</p>
                 <p>And we all know these practices are rampant! </p>
-                <p>So let's put an end to them. Just like we did tobacco companies. </p>
+                <p>So let's put an end to them. Just like we did with tobacco companies. </p>
                 <p><strong>Sign this petition to show parliamentarians that there is overwhelming support for an ad ban and that we want our health and the climate to come before corporate profits. </strong></p>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
