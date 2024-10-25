@@ -18,7 +18,7 @@
 
 	<meta property="og:title" content={title} />
 	<meta property="og:site_name" content="Stand.earth" />
-	<meta property="og:url" content={url}{slug} />
+	<meta property="og:url" content="https://thefrackingtruth.ca/{slug}" />
 	<meta property="og:description" content={description} />
 	<meta property="og:type" content="article" />
 	<meta property="og:locale" content="en_US" />
@@ -37,7 +37,7 @@
 
 	<meta name="robots" content="max-image-preview:large" />
 
-	<link rel="canonical" href="{url}{slug}" />
+	<link rel="canonical" href="https://thefrackingtruth.ca/{slug}" />
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X44KFXXS70"></script>

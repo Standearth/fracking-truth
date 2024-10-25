@@ -13,7 +13,8 @@
 
 	export let data;
 	data.slug = 'frackenstein';
-	let title, description, image, background, border, text_color, accent_color, ogimage;
+	let title, description, image, background, border, text_color, accent_color, ogimage, slug;
+	slug = data.slug;
 	version();
 	switch(data.slug) {
 		case 'frackenstein':
@@ -56,7 +57,7 @@
 	setContext("copy", copy);
 	setContext("data", data.data);
 </script>
-<Meta {title} {description} {ogimage} />
+<Meta {title} {description} {ogimage} {slug}/>
 <Header {title} {description} {background} {border} {image} {text_color} {accent_color}/>
 <Meet/>
 <Action />
