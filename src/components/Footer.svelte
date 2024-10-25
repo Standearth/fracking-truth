@@ -28,6 +28,11 @@
 				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/fracking/dogwood_white.png" alt="Dogwood BC"></a>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-7 mx-auto" style="text-align:center;">
+				<p style="font-size:10px;"><i>The Fracking Truth campaign is organized by Stand.earth and Dogwood BC. You can review Stand.earth's privacy policy at <a style="color:#fff;" href="https://stand.earth/privacy-policy/">https://stand.earth/privacy-policy</a>. You can find Dogwood BC's privacy policy at <a style="color:#fff;" href="https://www.dogwoodbc.ca/privacy-policy/">https://dogwoodbc.ca/privacy-policy</a></i></p>
+			</div>
+		</div>
 	</div>
 
   </footer>

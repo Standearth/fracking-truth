@@ -13,7 +13,7 @@
 
 	export let data;
 	data.slug = 'devil';
-	let title, description, image, background, border, text_color, accent_color, ogimage;
+	let title, description, image, background, border, text_color, accent_color, ogimage, slug;
 	version();
 	switch(data.slug) {
 		case 'frackenstein':
@@ -25,6 +25,7 @@
 			text_color = "#778203";
 			accent_color = "#f8ffa5";
 			ogimage = "frackenstein_bg.png";
+			slug = "/frackenstein";
 			break;
 		case 'giant':
 			title = "Greenhouse Gas Giant - Monster Misconceptions of Unnatural Gas";
@@ -35,6 +36,7 @@
 			text_color = "#00ab47";
 			accent_color = "#0b190e";
 			ogimage = "green_bg.png";
+			slug = "/giant";
 			break;
 		case 'devil':
 			title = "Danger Devil - Monster Misconceptions of Unnatural Gas";
@@ -45,18 +47,20 @@
 			text_color = "#0392b2";
 			accent_color = "#0d1d39";
 			ogimage = "devil_bg.png";
+			slug = "/devil";
 			break;
 		case 'cmo':
 			title = "Chief Misconception Officer - Monster Misconceptions of Unnatural Gas";
 			description ="Fracked gas is fuel on the fire of climate change";
 			image = "cmo_bg.webp";
 			ogimage = "cmo_bg.png";
+			slug = "/cmo";
 			break;
 	}
 	setContext("copy", copy);
 	setContext("data", data.data);
 </script>
-<Meta {title} {description} {ogimage} />
+<Meta {title} {description} {ogimage} {slug} />
 <Header {title} {description} {background} {border} {image} {text_color} {accent_color}/>
 <Meet/>
 <Action />
