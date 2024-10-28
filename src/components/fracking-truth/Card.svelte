@@ -34,9 +34,9 @@
                       <h4 style="color:{Text_Color}">{Spoiler}</h4>
                       <div class="share">
                         <h5>Share this Monster Misconception:</h5>
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thefrackingtruth.ca/{Slug}"><FacebookIcon /></a>
-                        <a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Monster%20Misconception%20about%20'natural'%20gas.%20https%3A//thefrackingtruth.ca/{Slug}"><TwitterIcon /></a>
-                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//thefrackingtruth.ca/{Slug}"><LinkedinIcon /></a>
+                        <a target="_new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//thefrackingtruth.ca/{Slug}"><FacebookIcon /></a>
+                        <a target="_new" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20Monster%20Misconception%20about%20'natural'%20gas.%20https%3A//thefrackingtruth.ca/{Slug}"><TwitterIcon /></a>
+                        <a target="_new" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//thefrackingtruth.ca/{Slug}"><LinkedinIcon /></a>
                       </div>
                     </div>
                   </div>
