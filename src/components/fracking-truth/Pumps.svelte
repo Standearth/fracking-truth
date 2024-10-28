@@ -21,7 +21,7 @@
                 <li>Unlike gas appliances, heat pumps don’t emit poisonous chemicals and can filter indoor air </li>
             </ul>
             
-            <h3>Don’t be fooled by industry fear mongering about heat pumps. Check out <a href="/facts">this FACTS page</a> for accurate info. </h3>   
+            <p><strong>Don’t be fooled by industry fear mongering about heat pumps. Check out <a href="/facts">this FACTS page</a> for accurate info. </strong></p>   
         </div>
     </div>
 </div>

@@ -25,7 +25,7 @@
 		<div class="hero row">
 			<div class="copy col-xl-7 col-lg-8 col-md-8 col-sm-12">
 				<h1 style="color:{text_color};">The Monster Misconceptions of <span style='color:{accent_color};'>UN</span>Natural Gas</h1>
-				<h3>Fracked gas is fuel on the <br/>fire of climate change.</h3>
+				<h3><strong>The truth: </strong>Fracked gas is fuel on the <br/>fire of climate change.</h3>
 				<img src="/assets/fracking/arrow_down.png" alt="learn more">
 			</div>
 			<div class="goons col-xl-5 col-lg-4 col-md-4 col-sm-12">
