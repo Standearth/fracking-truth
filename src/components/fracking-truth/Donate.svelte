@@ -6,10 +6,12 @@
 
     let amount = '';
 	let chain = '';
+	let params = '?';
     onMount(() => {
         // save the id parameter if it's in the url or an empty string
         amount = $page.url.searchParams.get('amount') || '';
 		chain = $page.url.searchParams.has('chain');
+		params = $page.url.search;
     });
 </script>
 <div class="action">
@@ -48,11 +50,11 @@
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 iframewrap">
 				{#if amount != '' && chain == true}
-                	<iframe src="https://act.stand.earth/page/74842/donate/1?chain&transaction.donationAmt={amount}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
+                	<iframe src="https://act.stand.earth/page/74842/donate/1{params}&transaction.donationAmt={amount}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
 				{:else if amount != '' && chain == false}
-					<iframe src="https://act.stand.earth/page/74842/donate/1?transaction.donationAmt={amount}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
+					<iframe src="https://act.stand.earth/page/74842/donate/1{params}&transaction.donationAmt={amount}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
 				{:else}
-					<iframe src="https://act.stand.earth/page/74842/donate/1" style="width:100%;height:1450px;" title="Make a donation"></iframe>
+					<iframe src="https://act.stand.earth/page/74842/donate/1{params}" style="width:100%;height:1450px;" title="Make a donation"></iframe>
 				{/if}
             </div>
         </div>
