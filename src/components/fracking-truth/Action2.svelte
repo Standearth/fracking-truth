@@ -1,6 +1,13 @@
 <script>
     import { getContext } from "svelte";
     const copy = getContext("copy");
+	import { page } from '$app/stores';
+    import { onMount } from 'svelte';
+    let params = '';
+    onMount(() => {
+        // save the id parameter if it's in the url or an empty string
+        params = $page.url.search;
+    });
 </script>
 <div class="action">
     <div class="container-xxl">
@@ -38,7 +45,7 @@
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h2>Sign the petition</h2>
-                <iframe src="https://act.stand.earth/page/74672/petition/1" style="width:100%;height:620px;" title="Sign the petition" scrolling="no"></iframe>
+                <iframe src="https://act.stand.earth/page/74672/petition/1{params}" style="width:100%;height:620px;" title="Sign the petition" scrolling="no"></iframe>
             </div>
         </div>
     </div>
