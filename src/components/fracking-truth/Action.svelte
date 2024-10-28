@@ -1,6 +1,13 @@
 <script>
     import { getContext } from "svelte";
     const copy = getContext("copy");
+    import { page } from '$app/stores';
+    import { onMount } from 'svelte';
+    let params = '';
+    onMount(() => {
+        // save the id parameter if it's in the url or an empty string
+        params = $page.url.search;
+    });
 </script>
 <img src="/assets/fracking/flames.png" alt="flames">
 <div class="action" id="petition">
@@ -17,7 +24,7 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <h2>Tell gas companies to stop greenwashing their toxic products!</h2>
-                <iframe src="https://act.stand.earth/page/74529/petition/1" style="width:100%;height:620px;" title="Sign the petition" scrolling="no"></iframe>
+                <iframe src="https://act.stand.earth/page/74529/petition/1{params}" style="width:100%;height:620px;" title="Sign the petition" scrolling="no"></iframe>
             </div>
         </div>
     </div>
