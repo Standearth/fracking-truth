@@ -17,7 +17,7 @@
 	version();
 	switch(data.slug) {
 		case 'frackenstein':
-			title = "Frackenstein - Monster Misconceptions of Unnatural Gas";
+			title = "Frackenstein - Monster Misconceptions of Un-natural Gas | The Fracking Truth";
 			description ="Fracked gas is fuel on the fire of climate change";
 			image = "frackenstein_bg.webp";
 			background = "#dede4c";
@@ -28,7 +28,7 @@
 			slug = "/frackenstein";
 			break;
 		case 'giant':
-			title = "Greenhouse Gas Giant - Monster Misconceptions of Unnatural Gas";
+			title = "Greenhouse Gas Giant - Monster Misconceptions of Un-natural Gas | The Fracking Truth";
 			description ="Fracked gas is fuel on the fire of climate change";
 			image = "green_bg.webp";
 			background = "#afffcc";
@@ -39,7 +39,7 @@
 			slug = "/giant";
 			break;
 		case 'devil':
-			title = "Danger Devil - Monster Misconceptions of Unnatural Gas";
+			title = "Danger Devil - Monster Misconceptions of Un-natural Gas | The Fracking Truth";
 			description ="Fracked gas is fuel on the fire of climate change";
 			image = "devil_bg.webp";
 			background = "#b4f3ff";
@@ -50,7 +50,7 @@
 			slug = "/devil";
 			break;
 		case 'cmo':
-			title = "Chief Misconception Officer - Monster Misconceptions of Unnatural Gas";
+			title = "Chief Misconception Officer - Monster Misconceptions of Un-natural Gas | The Fracking Truth";
 			description ="Fracked gas is fuel on the fire of climate change";
 			image = "cmo_bg.webp";
 			ogimage = "cmo_bg.png";

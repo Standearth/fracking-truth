@@ -1,5 +1,5 @@
 <script>
-	export let title = "The Fracking Truth - Monster Misconceptions of Unnatural Gas";
+	export let title = "The Fracking Truth - Monster Misconceptions of Un-natural Gas";
 	export let description = "Fracked gas is fuel on the fire of climate change";
 	export let url = "https://thefrackingtruth.ca";
 	export let keywords = "";
