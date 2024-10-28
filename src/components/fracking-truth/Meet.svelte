@@ -19,8 +19,8 @@
         <div class="col-lg-6 col-md-4 col-sm-12 meet-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/St1XZCxEgjU?si=g8C2rhGuqQpp_EtI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div class="share">
-                <a style="background:#8134AF;" href="https://instagram.com">Share on Instagram <InstagramIcon /></a>
-                <a style="background:#4267B2;" href="https://facebook.com">Share on Facebook <FacebookIcon /></a>
+                <a style="background:#8134AF;" href="https://www.instagram.com/reel/DBqzsQPhEzu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==">Share on Instagram <InstagramIcon /></a>
+                <a style="background:#4267B2;" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//youtu.be/St1XZCxEgjU?si=msERE-3Dk8qrn3GO">Share on Facebook <FacebookIcon /></a>
             </div>
         </div>
     </div>

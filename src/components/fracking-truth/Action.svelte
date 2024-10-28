@@ -3,7 +3,7 @@
     const copy = getContext("copy");
 </script>
 <img src="/assets/fracking/flames.png" alt="flames">
-<a name="take-action"></a>
+<a name="petition"></a>
 <div class="action">
     <div class="container-xxl">
         <div class="row">
