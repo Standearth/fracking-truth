@@ -1,1 +1,1 @@
-var _;const a=((_=globalThis.__sveltekit_5heyk9                        )==null?void 0:_.base)??"";var s;const e=((s=globalThis.__sveltekit_5heyk9                        )==null?void 0:s.assets)??a;export{e as a,a as b};
+var _;const a=((_=globalThis.__sveltekit_s8fs8p                        )==null?void 0:_.base)??"";var s;const e=((s=globalThis.__sveltekit_s8fs8p                        )==null?void 0:s.assets)??a;export{e as a,a as b};
