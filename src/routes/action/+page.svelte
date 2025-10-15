@@ -10,6 +10,12 @@
 	import Action from "$components/fracking-truth/Action2.svelte";
 	import Truth from "$components/fracking-truth/Truth.svelte";
 	import Pumps from "$components/fracking-truth/Pumps.svelte";
+
+// Adding this block to redirect
+	if (browser && window.location.pathname === "/action") {
+		window.location.replace("/#petition");
+	}
+
 	export let data;
 	let title, description, ogimage, slug;
 	title = "Take Action - The Fracking Truth";
