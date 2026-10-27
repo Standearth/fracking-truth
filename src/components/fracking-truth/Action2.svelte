@@ -12,14 +12,11 @@
 <div class="action">
     <div class="container-xxl">
         <div class="top-header row">
-			<div class="wordmark col-4 col-sm-2">
-				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
-			</div>
-			<div class="logo col-4 col-sm-8">
+			<div class="logo col-6">
 				<a href="/" aria-label="The Fracking Truth" target="_self"><img src="/assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
 			</div>
-			<div class="wordmark-right col-4 col-sm-2">
-				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/dogwood.png" alt="Dogwood BC"></a>
+			<div class="wordmark col-6">
+				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
 			</div>
 		</div>
         <div class="row heading">
@@ -91,7 +88,7 @@
 		width: 12em;
 		display:inline;
 		padding:15px;
-		float:left;
+		text-align:right;
 	}
 
 	.wordmark img {
@@ -99,7 +96,7 @@
 	}
 
 	.logo {
-		width:9em;
+		width:12em;
 		padding-top:20px;
 	}
 	
@@ -144,8 +141,12 @@
 		
 	}
 
-	.wordmark, .wordmark-right, .logo {
+	.wordmark, .wordmark-right {
 		width:5em;
+	}
+
+	.logo {
+		width:7em;
 	}
 
 	.wordmark img {

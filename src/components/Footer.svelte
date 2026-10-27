@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 mx-auto col-sm-12">
-				<a href="/facts">FACTS</a> <span>|</span> <a href="https://thefrackingtruth.ca/#petition"> Take Action</a> <span>|</span> <a href="https://safecities.earth/MonsterMisconceptions" target="_new"> Learn More</a> <span>|</span> <a href="/donate"> DONATE</a>
+				<a href="/facts">FACTS</a> <span>|</span> <a href="https://safecities.earth/MonsterMisconceptions" target="_new"> Learn More</a> <span>|</span> <a href="/donate"> DONATE</a>
 			</div>
 		</div>
 	</div>
@@ -25,12 +25,11 @@
 				<a href="https://thefrackingtruth.ca" aria-label="The Fracking Truth" target="_self"><img src="/assets/fracking/small_logo.png" alt="Fracking Truth"></a>
 			</div>
 			<div class="wordmark-right col-4">
-				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/fracking/dogwood_white.png" alt="Dogwood BC"></a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-7 mx-auto" style="text-align:center;">
-				<p style="font-size:10px;"><i>The Fracking Truth campaign is organized by Stand.earth and Dogwood BC. You can review Stand.earth's privacy policy at <a style="color:#fff;" href="https://stand.earth/privacy-policy/">https://stand.earth/privacy-policy</a>. You can find Dogwood BC's privacy policy at <a style="color:#fff;" href="https://www.dogwoodbc.ca/privacy-policy/">https://dogwoodbc.ca/privacy-policy</a></i></p>
+				<p style="font-size:10px;"><i>The Fracking Truth campaign is organized by Stand.earth. You can review Stand.earth's privacy policy at <a style="color:#fff;" href="https://stand.earth/privacy-policy/">https://stand.earth/privacy-policy</a>.</i></p>
 			</div>
 		</div>
 	</div>

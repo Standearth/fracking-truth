@@ -7,7 +7,6 @@
 	import Header from "$components/Header.svelte";
 	import Footer from "$components/Footer.svelte";
 	import Meet from "$components/fracking-truth/Meet.svelte";
-	import Action from "$components/fracking-truth/Action.svelte";
 	import Truth from "$components/fracking-truth/Truth.svelte";
 	import Pumps from "$components/fracking-truth/Pumps.svelte";
 
@@ -63,7 +62,6 @@
 <Meta {title} {description} {ogimage} {slug} />
 <Header {title} {description} {background} {border} {image} {text_color} {accent_color}/>
 <Meet/>
-<Action />
 <Truth />
 <Pumps />
 <Footer />

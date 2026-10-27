@@ -178,7 +178,7 @@
     }
 
     .accordion-item img {
-        max-width:280px;
+        max-width:min(280px, 100%);
     }
 
     .accordion-item li {

@@ -1,6 +1,6 @@
 <script>
-	export let title = "The Fracking Truth - Monster Misconceptions of Un-natural Gas";
-	export let description = "Fracked gas is fuel on the fire of climate change";
+	export let title = "Heat Pumps: The Solution We Need | The Fracking Truth";
+	export let description = "Ditch fossil gas. Switch to a modern heat pump.";
 	export let url = "https://thefrackingtruth.ca";
 	export let keywords = "";
 	export let ogimage = "cmo_bg.png";

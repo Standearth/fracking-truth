@@ -17,14 +17,11 @@
 <div class="action">
     <div class="container-xxl">
         <div class="top-header row">
-			<div class="wordmark col-4 col-sm-2">
-				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
-			</div>
-			<div class="logo col-4 col-sm-8">
+			<div class="logo col-6">
 				<a href="/" aria-label="The Fracking Truth" target="_self"><img src="/assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
 			</div>
-			<div class="wordmark-right col-4 col-sm-2">
-				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/dogwood.png" alt="Dogwood BC"></a>
+			<div class="wordmark col-6">
+				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
 			</div>
 		</div>
         <div class="row heading">
@@ -46,7 +43,7 @@
 
 				<h2>Give today to create a path to a clean, healthy, and livable future!  </h2>
 				<img src="/assets/fracking/cmo_bg.webp" alt="Monster Squad">
-				<p style="padding-top:10px;font-size:12px;"><i>Please note: The Fracking Truth campaign is organized by Stand.earth and Dogwood BC and your donation will be shared between the two organizations. Stand.earth is a registered non-profit society in Canada, under the name Stand Environmental Society (BC Reg Id: S0059653). Since we are not a registered charity, we cannot issue a tax receipt for donations made in Canada.</i></p>
+				<p style="padding-top:10px;font-size:12px;"><i>Please note: The Fracking Truth campaign is organized by Stand.earth. Stand.earth is a registered non-profit society in Canada, under the name Stand Environmental Society (BC Reg Id: S0059653). Since we are not a registered charity, we cannot issue a tax receipt for donations made in Canada.</i></p>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12 iframewrap">
 				{#if amount != '' && chain == true}
@@ -106,7 +103,7 @@
 		width: 12em;
 		display:inline;
 		padding:15px;
-		float:left;
+		text-align:right;
 	}
 
 	.wordmark img {
@@ -114,7 +111,7 @@
 	}
 
 	.logo {
-		width:9em;
+		width:12em;
 		padding-top:20px;
 	}
 	
@@ -159,8 +156,12 @@
 		
 	}
 
-	.wordmark, .wordmark-right, .logo {
+	.wordmark, .wordmark-right {
 		width:5em;
+	}
+
+	.logo {
+		width:7em;
 	}
 
 	.wordmark img {

@@ -1,44 +1,47 @@
 <script>
     import { getContext } from "svelte";
     const copy = getContext("copy");
+	// override to reuse the FAQ layout with other content (e.g. the Okanagan page)
+	export let heading = copy.FAQ.Heading;
+	export let intro = "";
+	export let sections = copy.FAQ.top;
 </script>
 <div class="faq">
 	<div class="container-xxl">
 		<div class="top-header row">
-			<div class="wordmark col-4 col-sm-2">
-				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
-			</div>
-			<div class="logo col-4 col-sm-8">
+			<div class="logo col-6">
 				<a href="/" aria-label="The Fracking Truth" target="_self"><img src="/assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
 			</div>
-			<div class="wordmark-right col-4 col-sm-2">
-				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/dogwood.png" alt="Dogwood BC"></a>
+			<div class="wordmark col-6">
+				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
 			</div>
 		</div>
 		<div class="row form">
 			<div class="col-lg-10 col-md-10 col-sm-12 mx-auto">
-				<h1>{copy.FAQ.Heading}</h1>
+				<h1>{heading}</h1>
+				{#if intro}<p class="intro">{@html intro}</p>{/if}
 			</div>
 		</div>
 	</div>
 </div>
 <img src="/assets/fracking/bubbles.png" alt="bubbles">
+<slot />
 <div class="container">
 	<div class="row heading">
 		<div class="col-lg-10 col-md-10 col-sm-12">
 			
-			{#each copy.FAQ.top as t,i}
+			{#each sections as t,i}
 				<h2 style="padding-top:30px;">{t.heading}</h2>
 				<p>{t.description}</p>
 				<div class="accordion accordion-flush" id="accordion-{i}">
 					{#each t.sections as s,v}
 						<div class="accordion-item">
 						<h2 class="accordion-header">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{i}{v}" aria-expanded="false" aria-controls="collapse-{i}{v}">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{i}-{v}" aria-expanded="false" aria-controls="collapse-{i}-{v}">
 								{s.title}
 							</button>
 						</h2>
-						<div id="collapse-{i}{v}" class="accordion-collapse collapse" data-bs-parent="#accordion-{i}">
+						<div id="collapse-{i}-{v}" class="accordion-collapse collapse" data-bs-parent="#accordion-{i}">
 							<div class="accordion-body">
 								<div class="row">
 									<div class="col-lg-10 col-md-8 col-sm-12">
@@ -92,6 +95,12 @@
         font-weight:300;
     }
 
+	.intro {
+		font-size:1.5rem;
+		font-weight:300;
+		padding-bottom:20px;
+	}
+
 	.heading li {
 		padding-bottom:5px;
 		padding-top:5px;
@@ -113,7 +122,7 @@
 		width: 12em;
 		display:inline;
 		padding:15px;
-		float:left;
+		text-align:right;
 	}
 
 	.wordmark img {
@@ -121,7 +130,7 @@
 	}
 
 	.logo {
-		width:9em;
+		width:12em;
 		padding-top:20px;
 	}
 	
@@ -151,6 +160,11 @@
 	}
 
     @media (max-width:768px) {
+		.faq h1 {
+			font-size:1.8rem;
+			overflow-wrap:break-word;
+		}
+
 		.hero h1 {
 			font-size:2rem;
 			padding-top:20%;
@@ -166,8 +180,12 @@
 		
 	}
 
-	.wordmark, .wordmark-right, .logo {
+	.wordmark, .wordmark-right {
 		width:5em;
+	}
+
+	.logo {
+		width:7em;
 	}
 
 	.wordmark img {
@@ -211,7 +229,7 @@
     }
 
     .accordion-item img {
-        max-width:280px;
+        max-width:min(280px, 100%);
     }
 
     .accordion-item li {

@@ -8,24 +8,32 @@
 	export let border = "bubbles.png";
 	export let text_color = "#471c15";
 	export let accent_color = "#ff7c61";
+	// optional overrides for the hero copy (HTML); defaults to the monster misconception headline
+	export let heading = "";
+	export let subheading = "";
 </script>
 <header style='background:{background};'>
 	<div class="container-xxl">
 		<div class="top-header row">
-			<div class="wordmark col-4 col-sm-2">
-				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
-			</div>
-			<div class="logo col-4 col-sm-8">
+			<div class="logo col-6">
 				<a href="/" aria-label="The Fracking Truth" target="_self"><img src="/assets/fracking/logo_frackingtruth.png" alt="Fracking Truth"></a>
 			</div>
-			<div class="wordmark-right col-4 col-sm-2">
-				<a href="https://dogwoodbc.ca" aria-label="Dogwood BC" target="_self"><img src="/assets/dogwood.png" alt="Dogwood BC"></a>
+			<div class="wordmark col-6">
+				<a href="https://stand.earth" aria-label="Stand.earth" target="_self"><img src="/assets/fracking/stand_logo_black.png" alt="Stand.earth"></a>
 			</div>
 		</div>
 		<div class="hero row">
 			<div class="copy col-xl-7 col-lg-8 col-md-8 col-sm-12">
-				<h1 style="color:{text_color};">The Monster Misconceptions of <span style='color:{accent_color};'>UN</span>Natural Gas</h1>
-				<h3><strong>The truth: </strong>Fracked gas is fuel on the <br/>fire of climate change.</h3>
+				{#if heading}
+					<h1 style="color:{text_color};">{@html heading}</h1>
+				{:else}
+					<h1 style="color:{text_color};">The Monster Misconceptions of <span style='color:{accent_color};'>UN</span>Natural Gas</h1>
+				{/if}
+				{#if subheading}
+					<h3>{@html subheading}</h3>
+				{:else}
+					<h3><strong>The truth: </strong>Fracked gas is fuel on the <br/>fire of climate change.</h3>
+				{/if}
 				<img src="/assets/fracking/arrow_down.png" alt="learn more">
 			</div>
 			<div class="goons col-xl-5 col-lg-4 col-md-4 col-sm-12">
@@ -38,7 +46,8 @@
 
 <style>
 	header {
-		height:90vh;
+		min-height:70vh;
+		padding-bottom:40px;
 	}
 
 	.top-header {
@@ -53,7 +62,7 @@
 		width: 12em;
 		display:inline;
 		padding:15px;
-		float:left;
+		text-align:right;
 	}
 
 	.wordmark img {
@@ -61,7 +70,7 @@
 	}
 
 	.logo {
-		width:9em;
+		width:12em;
 		padding-top:20px;
 	}
 	
@@ -114,17 +123,17 @@
 		max-height:40px;
 	}
 
-	.goons {
-		position:relative;
+	.hero {
+		align-items:flex-end;
 	}
 
+	/* illustration stays in its own column so it never covers the headline */
 	.goons img {
-		min-width:140%;
-		position:absolute;
-		bottom:5%;
-		left:-40%;
-		z-index:10;
-	}	
+		width:100%;
+		max-width:600px;
+		margin-left:auto;
+		display:block;
+	}
 
 	@media (max-width:1295px) {
 		.hero h1 {
@@ -148,11 +157,6 @@
 			padding-top:40%;
 		}
 
-		.goons img {
-		width:100%;
-		z-index:10;
-	}
-
 	}
 
 	@media (max-width:768px) {
@@ -162,17 +166,15 @@
 		}
 
 		.goons img {
-		min-width:80%;
-		width:100%;
 		margin:auto;
-		z-index:10;
-		position:initial;
-		left:0px;
-		
 	}
 
-	.wordmark, .wordmark-right, .logo {
+	.wordmark, .wordmark-right {
 		width:5em;
+	}
+
+	.logo {
+		width:7em;
 	}
 
 	.wordmark img {
@@ -180,7 +182,7 @@
 	}
 
 	header {
-		height:auto;
+		min-height:0;
 	}
 
 

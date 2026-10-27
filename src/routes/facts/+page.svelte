@@ -7,13 +7,12 @@
 	import Footer from "$components/Footer.svelte";
 	import Meet from "$components/fracking-truth/Meet.svelte";
 	import Faq from "$components/fracking-truth/Faq.svelte";
-	import Action from "$components/fracking-truth/Action.svelte";
 	import Truth from "$components/fracking-truth/Truth.svelte";
 	import Pumps from "$components/fracking-truth/Pumps.svelte";
 	export let data;
 	let title, description, ogimage, slug;
-	title = "Facts - The Fracking Truth";
-	description ="All of the facts on un-natural gas and clean alternatives.";
+	title = "Heat Pumps: The Solution We Need";
+	description ="Natural gas vs. heat pumps: the facts, myths, and real costs.";
 	ogimage = "cmo_bg.png";
 	slug = "/facts";
 			
@@ -21,10 +20,9 @@
 	setContext("data", data.data);
 </script>
 <Meta {title} {description} {ogimage} {slug} />
-<Faq />
-<Action />
-<div style="height:100px;width:100%;display:block;"></div>
+<Faq>
+	<Pumps factsLink={false} />
+</Faq>
 <Meet/>
 <Truth />
-<Pumps />
 <Footer />

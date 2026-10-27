@@ -1,9 +1,12 @@
 <script>
     import { getContext } from "svelte";
     const copy = getContext("copy");
+    export let factsLink = true;
 </script>
 
-<div class="container-xxl pump">
+<!-- full-width wrapper carries the background so it spans edge to edge -->
+<div class="pump">
+<div class="container-xxl">
     <div class="row" style='max-width:800px;margin:auto;'>
         <div class="col-lg-8 col-sm-12 mx-auto">
             <h1>Heat pumps are the perfect solution</h1>
@@ -13,20 +16,24 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-8 mx-auto">
-            <p>While gas companies push their products on us, we have a more modern, clean, and affordable technology to heat our homes: electric heat pumps!</p>
+        <div class="col-lg-8 col-12 mx-auto">
+            <p>Modern electric heat pumps keep our homes comfortable all year round — and they're cleaner, healthier, and often cheaper to run than gas.</p>
             <ul>
-                <li>Heat pumps are more efficient than gas furnaces and use electricity as an input, leading to lower greenhouse gas emissions and energy bills</li>
-                <li>Heat pumps can heat homes in the coldest of temperatures and double as air conditioners in the summer  </li>
-                <li>Unlike gas appliances, heat pumps don’t emit poisonous chemicals and can filter indoor air </li>
+                <li><strong>Cool in the summer:</strong> Heat pumps double as air conditioners, keeping families safe during heat waves</li>
+                <li><strong>Clean air on smoky days:</strong> Because heat pumps cool your home, you can keep the windows shut on hot, smoky wildfire days — and with a good filter they help clean indoor air. Unlike gas appliances, they don't create indoor air pollution either</li>
+                <li><strong>Warm in the winter:</strong> Today's cold-climate heat pumps heat homes efficiently, even in the coldest temperatures</li>
+                <li><strong>Lower bills:</strong> Heat pumps are up to three times more efficient than gas furnaces, so many B.C. households can save on their energy bills</li>
+                <li><strong>Good for the climate:</strong> Running on B.C.'s mostly clean electricity, heat pumps dramatically cut the carbon pollution from heating our homes</li>
             </ul>
-            
-            <p><strong>Don’t be fooled by industry fear mongering about heat pumps. Check out <a href="/facts">this FACTS page</a> for accurate info. </strong></p>   
+            {#if factsLink}
+            <p><strong>Don’t be fooled by industry fear mongering about heat pumps. Check out <a href="/facts">this FACTS page</a> for accurate info. </strong></p>
+            {/if}
         </div>
     </div>
 </div>
-    
-<div style="max-width:1200px;height:525px;margin:auto;"><iframe src="https://standearth.soapboxx.us/embed/6707e94529787be1acccb744" frameBorder="0" width="100%" height="525px" style="border:none;" title="soapboxx"></iframe></div>
+</div>
+
+<!-- soapboxx action embed removed for now: https://standearth.soapboxx.us/embed/6707e94529787be1acccb744 -->
 
 <style>
 .pump {
@@ -44,9 +51,20 @@ h1 {
     background-image:url('/assets/fracking/bubble.png');
     background-position:center top;
     background-size:cover;
+    padding-bottom:180px;
     font-size:1.2rem;
-    margin-bottom:100px;
+    margin-bottom:60px;
     text-align:left;
+}
+
+/* on narrower screens the text is taller than the cloud artwork, so use a plain panel in the cloud colour */
+@media (max-width:992px) {
+    .pump {
+        background-image:none;
+        background-color:#b4f3ff;
+        padding-bottom:50px;
+        min-height:0;
+    }
 }
 
 .pump img {
