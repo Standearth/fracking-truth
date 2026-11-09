@@ -3,7 +3,6 @@
 	import Meta from "$components/Meta.svelte";
 	import copy from "$data/copy.json";
 	import Footer from "$components/Footer.svelte";
-	import Meet from "$components/fracking-truth/Meet.svelte";
 	import Faq from "$components/fracking-truth/Faq.svelte";
 	import Pumps from "$components/fracking-truth/Pumps.svelte";
 	export let data;
@@ -20,5 +19,4 @@
 <Faq heading={copy.Okanagan.Heading} intro={copy.Okanagan.Intro} sections={[...copy.Okanagan.sections, ...copy.FAQ.top]} />
 <div style="height:100px;width:100%;display:block;"></div>
 <Pumps />
-<Meet/>
 <Footer />

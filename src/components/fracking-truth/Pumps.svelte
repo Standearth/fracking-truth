@@ -22,11 +22,11 @@
                 <li><strong>Cool in the summer:</strong> Heat pumps double as air conditioners, keeping families safe during heat waves</li>
                 <li><strong>Clean air on smoky days:</strong> Because heat pumps cool your home, you can keep the windows shut on hot, smoky wildfire days — and with a good filter they help clean indoor air. Unlike gas appliances, they don't create indoor air pollution either</li>
                 <li><strong>Warm in the winter:</strong> Today's cold-climate heat pumps heat homes efficiently, even in the coldest temperatures</li>
-                <li><strong>Lower bills:</strong> Heat pumps are up to three times more efficient than gas furnaces, so many B.C. households can save on their energy bills</li>
+                <li><strong>Lower bills:</strong> Heat pumps use about ⅓ of the energy of a gas furnace, so many B.C. households can save on their energy bills</li>
                 <li><strong>Good for the climate:</strong> Running on B.C.'s mostly clean electricity, heat pumps dramatically cut the carbon pollution from heating our homes</li>
             </ul>
             {#if factsLink}
-            <p><strong>Don’t be fooled by industry fear mongering about heat pumps. Check out <a href="/facts">this FACTS page</a> for accurate info. </strong></p>
+            <p><strong>Don’t be fooled by industry fear mongering about heat pumps; the future is electric. Check out <a href="/facts">this FACTS page</a> for accurate info. </strong></p>
             {/if}
         </div>
     </div>
