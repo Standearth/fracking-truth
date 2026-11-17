@@ -1,6 +1,21 @@
 <script>
 	import "$styles/app.css";
 	import Header from "$components/Header.svelte";
+	import { onMount } from "svelte";
+	import { afterNavigate } from "$app/navigation";
+
+	// open links to other sites in a new tab (most links come from {@html} copy)
+	// links that set their own target (e.g. target="_self") are left alone
+	function externalLinksInNewTab() {
+		document.querySelectorAll("a[href]").forEach((a) => {
+			if (a.hasAttribute("target")) return;
+			if (!/^https?:/.test(a.href) || a.hostname === location.hostname) return;
+			a.target = "_blank";
+			a.rel = "noopener noreferrer";
+		});
+	}
+	onMount(externalLinksInNewTab);
+	afterNavigate(externalLinksInNewTab);
 </script>
 
 <svelte:head>
